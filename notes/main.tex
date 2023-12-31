@@ -509,7 +509,7 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
 \end{proof}
 
 \begin{corollary}
-    [Hamiltonian cycle] 设G为$n \geq 1$ 阶简单无向图，若对于$G$中不相邻的任意两点$v_1,v_2$，均有
+    [Øystein Ore, Norwegian] 设G为$n \geq 1$ 阶简单无向图，若对于$G$中不相邻的任意两点$v_1,v_2$，均有
     \[
         d(v_1) + d(v_2) \geq n\]
     则G中存在哈密顿通路。
@@ -534,13 +534,53 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
     $\impliedby$ 如果$G \ \cup \ e = (u, v)$ 的一条哈密顿回路中有边 $e$，那么删去这条边，用同样的方法构造一个圈。
 \end{proof}
 
+\begin{example}
+    对于 $n \geq 4$阶简单无向图G，只要$\delta(G) \geq \frac n 2 + 1$，G中至少存在2条不同的哈密顿回路。
+\end{example}
+
 \begin{theorem}
     设$D$为$n \geq 2$阶竞赛图,则D具有哈密顿通路。
 \end{theorem}
 \begin{proof}
-    
+    induction by n. \\
+    n = 2 : trivial \\
+    Suppose n = k OK. When n = k + 1. WLOG, let $\Gamma = v_1v_2...v_k$ be a Hamiltonian path of $G - v_{k+1}$,
+    If $\forall 1\leq i \leq k$, directed edge $(v_i, v_{k+1}) \in E(G)$, then $\Gamma' = v_1...v_kv_{k+1}$ is the desired Hamiltonian path. 
+    Otherwise, there $\exists r \in \{1,2, ... ,k\}$ such that $(v_i, v_{k+1}) \in E(G), \forall i < r$, but $(v_{k+1}, v_r) \in E(G)$. Then $\Gamma' = v_1...v_{r-1}v_{k+1}v_r...v_k$ 
+    is the desired path.   
 \end{proof}
 
+下面探讨竞赛图中何时有哈密顿回路。我们假定竞赛图是强连通的，那么有如下的两个引理。
+
+\begin{lemma}
+    强连通的竞赛图$(n\geq 3)$中存在长度为3的圈。
+\end{lemma}
+\begin{proof}
+    Take any vertex $v_0 \in D$. Let $\Gamma_D^+(v_0) = \{v|<v_0, v> \in E(D)\}$, $\Gamma_D^-(v_0) = \{v|<, v_0> \in E(D)\}$.
+    We claim that both $\Gamma^+$ and $\Gamma^-$ are non-empty. Moreover, there $\exists u \in \Gamma^+, v \in \Gamma^-$ such that
+    $(u, v) \in E(D)$ (otherwise D is not strongly connected). Thus, $v_0 \to u \to v \to v_0$ forms a 3-loop.
+\end{proof}
+
+\begin{lemma}
+    强连通的竞赛图$(n\geq 3)$中，如果存在长为$k < n$的圈，则存在长为$k+1$的圈。
+\end{lemma}
+\begin{proof}
+    1. 先考虑是否有点$u$同时是长为k的圈有关的边的from和to。如果是，那么必然存在$(v_i,u) \in E \wedge (u, v_{i+1}) \in E$, 这一点用之前的套路即可说明。\\
+    2. 如果不存在这样的点，那么圈以外的点可以分成两类，一类是圈上的点到该点都是入边，一类是圈上的点到该点都是出边。\\
+    由强连通性可知，这两个集合都非空，且任何一个都有指向对方集合的边。那么任意选出圈上的点$v_1 \to v_2\to v_3$，将其换成$v_1 \to v' \to v'' \to v_3$.
+\end{proof}
+
+\begin{theorem}
+    强连通的竞赛图是哈密顿图。
+\end{theorem}
+\begin{proof}
+    Easy by the previous 2 lemmas. \\
+    Note that $K_2$ cannot be strongly connected but other tournament graphs can.
+\end{proof}
+
+\begin{theorem}
+    $K_{2n}$中有n-1条边不重的哈密顿回路,$K_{2n+1}$中有n条边不重的哈密顿回路。
+\end{theorem}
 \chapterimage{head2.png} % Chapter heading image
 \chapter{Matrix Theory for Graphs}
 \section{Adjacency Matrix}

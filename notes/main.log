@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.7)  31 DEC 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.7)  31 DEC 2023 20:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1227,7 +1227,6 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 Package hyperref Info: Link coloring OFF on input line 34.
- (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1250,7 +1249,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <35> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 48.
-<Pictures//esahubble.png, id=75, 614.295pt x 794.97pt>
+<Pictures//esahubble.png, id=7, 614.295pt x 794.97pt>
 File: Pictures//esahubble.png Graphic file (type png)
 <use Pictures//esahubble.png>
 Package pdftex.def Info: Pictures//esahubble.png  used on input line 58.
@@ -1273,39 +1272,32 @@ File: c70gkai.fd 2021/10/16 4.8.5
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.fdx
 File: c70gkai.fdx 2021/10/16 4.8.5
 ) [2]
-<Pictures//head1.png, id=99, 1027.6794pt x 514.0806pt>
+<Pictures//head1.png, id=31, 1027.6794pt x 514.0806pt>
 File: Pictures//head1.png Graphic file (type png)
 <use Pictures//head1.png>
 Package pdftex.def Info: Pictures//head1.png  used on input line 80.
 (pdftex.def)             Requested size: 614.295pt x 307.30548pt.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 80.
- (./main.toc
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 2.
 
-
-LaTeX Font Warning: Font shape `C70/gkai/b/n' undefined
-(Font)              using `C70/gkai/m/n' instead on input line 15.
-
-)
+No file main.toc.
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3
+[3
 
  <./Pictures//head1.png>] [4]
 Chapter 1.
 \c@ttl@toc@default=\count470
-<Pictures//head2.png, id=151, 1027.6794pt x 514.0806pt>
+<Pictures//head2.png, id=41, 1027.6794pt x 514.0806pt>
 File: Pictures//head2.png Graphic file (type png)
 <use Pictures//head2.png>
 Package pdftex.def Info: Pictures//head2.png  used on input line 96.
 (pdftex.def)             Requested size: 614.295pt x 307.30548pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 98.
 Package mdframed Info: mdframed works in twoside mode on input line 99.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1347,6 +1339,9 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+
+LaTeX Warning: Reference `mdf@pagelabel-1' on page 5 undefined on input line 101.
+
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
@@ -1355,26 +1350,42 @@ Package mdframed Info: mdframed works in twoside mode on input line 124.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 124.
+
+LaTeX Warning: Reference `mdf@pagelabel-2' on page 5 undefined on input line 126.
+
 Package mdframed Info: mdframed works in twoside mode on input line 129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 129.
- [5
+[5
 
  <./Pictures//head2.png>]
 Package mdframed Info: Not enough space on this page on input line 131.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-3' on page 6 undefined on input line 131.
+
 Package mdframed Info: mdframed works in twoside mode on input line 133.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 133.
+
+LaTeX Warning: Reference `mdf@pagelabel-4' on page 6 undefined on input line 135.
+
 Package mdframed Info: mdframed works in twoside mode on input line 137.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 137.
+
+LaTeX Warning: Reference `mdf@pagelabel-5' on page 6 undefined on input line 139.
+
 Package mdframed Info: mdframed works in twoside mode on input line 149.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 149.
+
+LaTeX Warning: Reference `mdf@pagelabel-6' on page 6 undefined on input line 151.
+
 Package mdframed Info: mdframed works in twoside mode on input line 158.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1384,10 +1395,16 @@ Overfull \hbox (22.97154pt too wide) in paragraph at lines 159--160
 [][]\T1/pag/db/n/10 (-20) Definition 1.2.5 --- Epi-graph. []\T1/ptm/m/n/10.95 (-20) For $\OML/ztmcm/m/it/10.95 f \OT1/ztmcm/m/n/10.95 : \U/msb/m/n/10.95 R[] \OMS/ztmcm/m/n/10.95 ! []$\T1/ptm/m/n/10.95 (-20) , its epi-graph $\OML/ztmcm/m/it/10.95 epi\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 f\OT1/ztmcm/m/n/10.95 ) \OMS/ztmcm/m/n/10.95 2 \U/msb/m/n/10.95 R[]\OML/ztmcm/m/it/10.95 isthesetepi\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 f\OT1/ztmcm/m/n/10.95 )\OMS/ztmcm/m/n/10.95 f\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 x; \OT1/ztmcm/m/n/10.95 )\OMS/ztmcm/m/n/10.95 j\OML/ztmcm/m/it/10.95 f\OT1/ztmcm/m/n/10.95 (\OML/ztmcm/m/it/10.95 x\OT1/ztmcm/m/n/10.95 ) \OMS/ztmcm/m/n/10.95 2
  []
 
+
+LaTeX Warning: Reference `mdf@pagelabel-7' on page 6 undefined on input line 160.
+
 Package mdframed Info: mdframed works in twoside mode on input line 163.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 163.
+
+LaTeX Warning: Reference `mdf@pagelabel-8' on page 6 undefined on input line 166.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -1396,6 +1413,9 @@ Package mdframed Info: mdframed works in twoside mode on input line 172.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 172.
+
+LaTeX Warning: Reference `mdf@pagelabel-9' on page 6 undefined on input line 174.
+
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 178.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1407,20 +1427,360 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 184.
  [6]
 Package mdframed Info: Not enough space on this page on input line 184.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-10' on page 7 undefined on input line 184.
+
 Package mdframed Info: mdframed works in twoside mode on input line 193.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 193.
+
+LaTeX Warning: Reference `mdf@pagelabel-11' on page 7 undefined on input line 195.
+
 Package mdframed Info: mdframed works in twoside mode on input line 197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 197.
+
+LaTeX Warning: Reference `mdf@pagelabel-12' on page 7 undefined on input line 199.
+
 Package mdframed Info: mdframed works in twoside mode on input line 200.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 200.
-<Pictures//1_1.png, id=183, 529.98pt x 469.755pt>
+
+LaTeX Warning: Reference `mdf@pagelabel-13' on page 7 undefined on input line 202.
+
+<Pictures//1_1.png, id=78, 529.98pt x 469.755pt>
 File: Pictures//1_1.png Graphic file (type png)
 <use Pictures//1_1.png>
 Package pdftex.def Info: Pictures//1_1.png  used on input line 232.
-(pdftex.def)             Requested s
+(pdftex.def)             Requested size: 264.98933pt x 234.87692pt.
+
+Underfull \vbox (badness 2050) has occurred while \output is active []
+
+ [7]
+<Pictures//1_2.png, id=92, 318.18875pt x 316.18124pt>
+File: Pictures//1_2.png Graphic file (type png)
+<use Pictures//1_2.png>
+Package pdftex.def Info: Pictures//1_2.png  used on input line 262.
+(pdftex.def)             Requested size: 318.18796pt x 316.18047pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./Pictures//1_1.png>]
+<Pictures//1_3.png, id=102, 326.21875pt x 165.61874pt>
+File: Pictures//1_3.png Graphic file (type png)
+<use Pictures//1_3.png>
+Package pdftex.def Info: Pictures//1_3.png  used on input line 271.
+(pdftex.def)             Requested size: 326.21794pt x 165.61833pt.
+ [9 <./Pictures//1_2.png> <./Pictures//1_3.png>] [10]
+Chapter 2.
+File: Pictures//head2.png Graphic file (type png)
+<use Pictures//head2.png>
+Package pdftex.def Info: Pictures//head2.png  used on input line 284.
+(pdftex.def)             Requested size: 614.295pt x 307.30548pt.
+Package mdframed Info: mdframed works in twoside mode on input line 288.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 288.
+
+LaTeX Warning: Reference `mdf@pagelabel-14' on page 11 undefined on input line 290.
+
+Package mdframed Info: mdframed works in twoside mode on input line 299.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 299.
+
+LaTeX Warning: Reference `mdf@pagelabel-15' on page 11 undefined on input line 302.
+
+Package mdframed Info: mdframed works in twoside mode on input line 307.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 307.
+
+LaTeX Warning: Reference `mdf@pagelabel-16' on page 11 undefined on input line 313.
+
+
+LaTeX Font Warning: Font shape `C70/gkai/b/n' undefined
+(Font)              using `C70/gkai/m/n' instead on input line 314.
+
+Package mdframed Info: mdframed works in twoside mode on input line 316.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 316.
+
+LaTeX Warning: Reference `mdf@pagelabel-17' on page 11 undefined on input line 319.
+
+Package mdframed Info: mdframed works in twoside mode on input line 321.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 321.
+[11
+
+]
+Package mdframed Info: Not enough space on this page on input line 324.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-18' on page 12 undefined on input line 324.
+
+Package mdframed Info: mdframed works in twoside mode on input line 325.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 325.
+
+LaTeX Warning: Reference `mdf@pagelabel-19' on page 12 undefined on input line 328.
+
+Package mdframed Info: mdframed works in twoside mode on input line 330.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+
+LaTeX Warning: Reference `mdf@pagelabel-20' on page 12 undefined on input line 333.
+
+Package mdframed Info: mdframed works in twoside mode on input line 335.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 335.
+
+LaTeX Warning: Reference `mdf@pagelabel-21' on page 12 undefined on input line 338.
+
+Package mdframed Info: mdframed works in twoside mode on input line 347.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 347.
+
+LaTeX Warning: Reference `mdf@pagelabel-22' on page 12 undefined on input line 349.
+
+Package mdframed Info: mdframed works in twoside mode on input line 350.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 350.
+
+LaTeX Warning: Reference `mdf@pagelabel-23' on page 12 undefined on input line 352.
+
+[12]
+Chapter 3.
+File: Pictures//head2.png Graphic file (type png)
+<use Pictures//head2.png>
+Package pdftex.def Info: Pictures//head2.png  used on input line 355.
+(pdftex.def)             Requested size: 614.295pt x 307.30548pt.
+Package mdframed Info: mdframed works in twoside mode on input line 357.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 357.
+
+LaTeX Warning: Reference `mdf@pagelabel-24' on page 13 undefined on input line 359.
+
+Package mdframed Info: mdframed works in twoside mode on input line 360.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 360.
+
+LaTeX Warning: Reference `mdf@pagelabel-25' on page 13 undefined on input line 362.
+
+Package mdframed Info: mdframed works in twoside mode on input line 364.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 364.
+
+LaTeX Warning: Reference `mdf@pagelabel-26' on page 13 undefined on input line 366.
+
+Package mdframed Info: mdframed works in twoside mode on input line 367.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 367.
+
+LaTeX Warning: Reference `mdf@pagelabel-27' on page 13 undefined on input line 369.
+
+Package mdframed Info: mdframed works in twoside mode on input line 378.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 378.
+
+LaTeX Warning: Reference `mdf@pagelabel-28' on page 13 undefined on input line 384.
+
+[13
+
+]
+Package mdframed Info: mdframed works in twoside mode on input line 399.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 399.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-29' on page 14 undefined on input line 402.
+
+Package mdframed Info: mdframed works in twoside mode on input line 408.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 408.
+
+LaTeX Warning: Reference `mdf@pagelabel-30' on page 14 undefined on input line 410.
+
+Package mdframed Info: mdframed works in twoside mode on input line 415.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 415.
+
+LaTeX Warning: Reference `mdf@pagelabel-31' on page 14 undefined on input line 421.
+
+Package mdframed Info: mdframed works in twoside mode on input line 428.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 428.
+
+LaTeX Warning: Reference `mdf@pagelabel-32' on page 14 undefined on input line 431.
+
+Package mdframed Info: mdframed works in twoside mode on input line 433.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 433.
+
+LaTeX Warning: Reference `mdf@pagelabel-33' on page 14 undefined on input line 436.
+
+Package mdframed Info: mdframed works in twoside mode on input line 438.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 438.
+
+LaTeX Warning: Reference `mdf@pagelabel-34' on page 14 undefined on input line 440.
+
+Package mdframed Info: mdframed works in twoside mode on input line 453.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 453.
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--456
+
+ []
+
+[14]
+Package mdframed Info: Not enough space on this page on input line 462.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-35' on page 15 undefined on input line 462.
+
+Package mdframed Info: mdframed works in twoside mode on input line 464.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 464.
+
+LaTeX Warning: Reference `mdf@pagelabel-36' on page 15 undefined on input line 468.
+
+Package mdframed Info: mdframed works in twoside mode on input line 477.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 477.
+
+LaTeX Warning: Reference `mdf@pagelabel-37' on page 15 undefined on input line 481.
+
+Package mdframed Info: mdframed works in twoside mode on input line 493.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 493.
+
+LaTeX Warning: Reference `mdf@pagelabel-38' on page 15 undefined on input line 498.
+
+[15]
+Package mdframed Info: mdframed works in twoside mode on input line 511.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 511.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-39' on page 16 undefined on input line 516.
+
+Missing character: There is no Œ in font zptmcm7t!
+Package mdframed Info: mdframed works in twoside mode on input line 521.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 521.
+
+LaTeX Warning: Reference `mdf@pagelabel-40' on page 16 undefined on input line 526.
+
+Package mdframed Info: mdframed works in twoside mode on input line 528.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 528.
+
+LaTeX Warning: Reference `mdf@pagelabel-41' on page 16 undefined on input line 531.
+
+Package mdframed Info: mdframed works in twoside mode on input line 541.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 541.
+
+LaTeX Warning: Reference `mdf@pagelabel-42' on page 16 undefined on input line 543.
+
+[16]
+Package mdframed Info: mdframed works in twoside mode on input line 573.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 573.
+
+
+LaTeX Warning: Reference `mdf@pagelabel-43' on page 17 undefined on input line 575.
+
+Package mdframed Info: mdframed works in twoside mode on input line 581.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 581.
+
+LaTeX Warning: Reference `mdf@pagelabel-44' on page 17 undefined on input line 583.
+
+[17] [18
+
+]
+Chapter 4.
+File: Pictures//head2.png Graphic file (type png)
+<use Pictures//head2.png>
+Package pdftex.def Info: Pictures//head2.png  used on input line 585.
+(pdftex.def)             Requested size: 614.295pt x 307.30548pt.
+\tf@ptc=\write7
+\openout7 = `main.ptc'.
+
+[19] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  22E1F98C79F0DD90EE83667D03361804;2724.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36283 strings out of 476025
+ 669792 string characters out of 5790017
+ 1883388 words of memory out of 5000000
+ 55560 multiletter control sequences out of 15000+600000
+ 649308 words of font info for 391 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 93i,13n,94p,1101b,1946s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu30.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu4e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu4f.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu50.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu51.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu52.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu53.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu54.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu56.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu57.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu59.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu5b.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu5c.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu5e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu5f.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu60.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu61.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu62.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu63.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu65.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu66.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu67.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu68.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu6b.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu6c.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu6d.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu6e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu70.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu71.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu73.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu74.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu75.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu76.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu77.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu78.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu79.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu7a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu7b.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu7c.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu7e.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu7f.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu80.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu81.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu82.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu86.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu88.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu89.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu8b.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu8d.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu8f.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu90.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu91.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu94.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu95.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu96.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu97.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu98.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiu9a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arphic/gkaiu/gkaiuff.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (19 pages, 14049357 bytes).
+PDF statistics:
+ 631 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 111895 words of extra memory for PDF output out of 128383 (max. 10000000)
+
