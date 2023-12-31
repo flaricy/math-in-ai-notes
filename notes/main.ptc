@@ -12,15 +12,17 @@
 \contentsline {chapter}{\numberline {2}Basic Concepts}{11}{chapter.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
-\contentsline {section}{\numberline {2.1}简单图}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}short}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}通路与回路}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.1}Simple graph, complete graph, tournament graph}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Operations on a graph}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Havel-Hakimi algorithm \& Erdos-Gallai theorem}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}通路与回路}{11}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Eulerian Graph and Hamiltonian Graph}{13}{chapter.3}%
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
 \contentsline {section}{\numberline {3.1}Eulerian Graph}{13}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Matrix Theory for Graphs}{15}{chapter.4}%
+\contentsline {section}{\numberline {3.2}Hamiltonian Graph}{14}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Matrix Theory for Graphs}{17}{chapter.4}%
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
-\contentsline {section}{\numberline {4.1}Adjacency Matrix}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Adjacency Matrix}{17}{section.4.1}%
 \contentsfinish 

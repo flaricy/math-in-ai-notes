@@ -279,14 +279,22 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
 \end{align*}
 \end{itemize}
 
+% chapter 2: Basic concepts
 \chapterimage{head2.png} % Chapter heading image
 \chapter{Basic Concepts}
-\section{简单图}
+
+% section 2.1
+\section{Simple graph, complete graph, tournament graph}
 \begin{definition}
 [simple graph] 有向图或者无向图，如果无平行边（重边）和自环。
 \end{definition}
 
-\section[short]{Havel-Hakimi algorithm \& Erdos-Gallai theorem}
+% section 2.2
+\section{Operations on a graph}
+点、边的删除；收缩；两个图之间的运算
+
+% section 2.3
+\section{Havel-Hakimi algorithm \& Erdos-Gallai theorem}
 给定一个度数序列 $\{d_i\}$，判断是否可以根据这个度数序列构造出简单无向图。
 \begin{theorem}
     [Havel-Hakimi] Let $d = (d_1, d_2, ...,d_n)$, $\sum_{i = 1}^n {d_i} = 0 (mod 2)$ 且 $n-1 \geq d_1 \geq 
@@ -336,6 +344,12 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
     \end{itemize}
     
 \end{remark}
+\begin{definition}
+    [Girth] 围长。简单无向图中最短圈的长度。
+\end{definition}
+\begin{definition}
+    [Perimeter] 周长。简单无向图中最长圈的长度。
+\end{definition}
 
 \chapterimage{head2.png} % Chapter heading image
 \chapter{Eulerian Graph and Hamiltonian Graph}
@@ -415,6 +429,117 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
     [有向半欧拉图的判定]
     D中恰有两个奇数度的顶点，且一个点出度比如度大1，一个点入度比出度大1.其他点如度都等于出度。
 \end{theorem}
+
+\begin{definition}
+    [Fleury's algorithm]
+    求无向图中的欧拉回路。
+\end{definition}
+
+\begin{definition}
+    [逐步插入回路算法]
+\end{definition}
+
+\section{Hamiltonian Graph}
+\begin{proposition}
+    [motive] (1859 Willian Hamilton) \textbf{Traverse the World Problem} \\
+    正十二面体图上是否存在一条初级回路（圈）遍历所有顶点？
+\end{proposition}
+\begin{remark}
+    [Traveling Salesman Problem, TSP] 在一个赋权的无向图中，去找一个哈密尔顿回路，并且使得该回路的总权值最小。\\
+    这是一个NP-complete问题。
+
+\end{remark}
+
+\begin{definition}
+    Hamiltonian path \\
+    \begin{itemize}
+        \item 经过所有点恰好1次的通路称为哈密顿路。
+        \item 如果上面的通路是回路，那么称为哈密顿回路。
+        \item 具有哈密顿回路的图称为哈密顿图。
+        \item 具有哈密顿通路但没有哈密顿回路的图称为半哈密顿图。
+        \item 规定：平凡图是哈密顿图。
+    \end{itemize}
+\end{definition}
+
+\begin{theorem}
+    $G = < V, E>$ is Hamiltonian. For every $\emptyset \neq V_1 \subsetneq{V}$we have
+    \[
+        p(G - V_1) \leq |V_1| \], where $p(G)$ denotes the number of connected components of $G$.
+\end{theorem}
+\begin{proof}
+    [\textbf{Sketch}]
+    \begin{fact}
+        往一个图中添加边，那么连通分支数不会减少。
+    \end{fact}
+    所以只需要考虑$G$中哈密顿回路所包含的边，如果删去一些节点，对连通分支数的影响。
+\end{proof}
+
+\begin{corollary}
+    [case of semi-Hamiltonian graph] 设$G = < V, E>$ is semi-Hamiltonian, For every $\emptyset \neq V_1 \subsetneq{V}$ we have
+    \[
+        p(G - V_1) \leq |V_1| + 1 \], where $p(G)$ denotes the number of connected components of $G$.
+\end{corollary}
+\begin{proof}
+    同样考虑在哈密顿通路（不是回路）中删除一些点能产生多少段即可。
+\end{proof}
+
+\begin{example}
+    [Peterson Graph] Show that Peterson Graph is semi-Hamiltonian.
+\end{example}
+\begin{remark}
+    彼得森图满足Theorem 3.2.2，但不是哈密顿图。
+\end{remark}
+
+\begin{theorem}
+    [a sufficent condition] 设G为$n \geq 1$ 阶简单无向图，若对于$G$中不相邻的任意两点$v_1,v_2$，均有
+    \[
+        d(v_1) + d(v_2) \geq n  - 1\]
+    则G中存在哈密顿通路。
+\end{theorem}
+\begin{proof}
+    First, show that $G$ is connected. \\
+    if G is not connected, then consider two connected components $G_1, G_2$, pick $v_1 \in G_1, v_2 \in G_2$.
+    We have $d(v_1) \leq |V(G_1)| - 1, d(v_2) \leq |V(G_2)| - 1$, which implies $d(v_1) + d(v_2) \leq |V| - 2$. Contradiction. \\
+    考虑极大路径法。\\
+    1. 任选一条极大路径 $\Gamma = v_1 v_2 ... v_l$。 如果 $l = n$, 那么这就是哈密顿通路。如果不是： \\
+    2. 证明存在一个圈经过$\Gamma$ 上所有顶点。为此，只要证明：存在顶点 $v_i \in \Gamma$ 使得 $v_{i-1}$ 与 $v_1$ 相邻，
+    $v_i$ 与 $v_n$ 相邻。这一点可以通过条件证明。 \\ 
+    因为图G中有$\Gamma$中未出现的点，所以可以找到这样一个点和上面构造的圈中某个点相邻，我们就可以找到一条更长的哈密顿通路。\\
+    3. 重复此过程，我们可以在有限步之内得到最长的极大通路，此即哈密顿通路。
+\end{proof}
+
+\begin{corollary}
+    [Hamiltonian cycle] 设G为$n \geq 1$ 阶简单无向图，若对于$G$中不相邻的任意两点$v_1,v_2$，均有
+    \[
+        d(v_1) + d(v_2) \geq n\]
+    则G中存在哈密顿通路。
+\end{corollary}
+\begin{proof}
+    由Theorem3.2.5知，G中存在哈密顿通路$\Gamma = v_1 v_2 ... v_n$，如果$v_1 和 v_n$相邻，那么找到了回路。如果不相邻，用类似的方法可以找到一个圈。    
+\end{proof}
+
+\begin{corollary}
+    设G为$n \geq 1$ 阶简单无向图，若对于$G$中任意$v$，均有
+    \[
+        d(v)\geq \frac n 2\]
+    则G中存在哈密顿通路。
+\end{corollary}
+
+\begin{theorem}
+    设$u,v$为无向n阶简单图G中的任意两个不相邻的顶点，且$d(u) + d(v) \geq n$，则 \\
+    G为哈密顿图 $\iff$ $G \ \cup \ e = (u, v)$ 为哈密顿图。
+\end{theorem}
+\begin{proof}
+    $\implies$ trivial. \\
+    $\impliedby$ 如果$G \ \cup \ e = (u, v)$ 的一条哈密顿回路中有边 $e$，那么删去这条边，用同样的方法构造一个圈。
+\end{proof}
+
+\begin{theorem}
+    设$D$为$n \geq 2$阶竞赛图,则D具有哈密顿通路。
+\end{theorem}
+\begin{proof}
+    
+\end{proof}
 
 \chapterimage{head2.png} % Chapter heading image
 \chapter{Matrix Theory for Graphs}
