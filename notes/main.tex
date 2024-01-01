@@ -585,5 +585,64 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
 \chapter{Matrix Theory for Graphs}
 \section{Adjacency Matrix}
 
+% new chapter : matrix
+\def\x{\times}
+
+\chapterimage{head1.png}
+\chapter{Matrix Foundations}
+
+\section{线性映射的伴随}
+
+\section{Singular Value Decomposition}
+设$V, W$为$\R$上的有限维内积空间，其内积记作$(\cdot | \cdot)_V$ 和 $(\cdot | \cdot)_W$. 设 $m = \text{dim} W$, $n = \text{dim} W$.
+\begin{theorem}
+    [SVD] 对于任意线性映射 $T: V \to W$, 记$p = \min \{m, n\}$, 则存在 \\
+    \begin{itemize}
+        \item V 的单位正交基$v_1,...,v_m$, \\
+        \item W 的单位正交基$w_1, ..., w_m$, \\
+        \item 非负实数$\sigma_1 \geq \sigma_2 \geq ... \geq \sigma_p$, 
+    \end{itemize}
+    使得
+    \[
+        Tv_i = \begin{cases}
+            \sigma_iw_i, \quad &1 \leq i \leq p \\
+            0, \quad &i > p 
+        \end{cases}\]
+    此处的$\sigma_1 \geq ... \geq \sigma_p$ 由$T$唯一确定，称为$T$的奇异值。
+\end{theorem}
+
+\begin{proof}
+    to be written
+\end{proof}
+
+\begin{theorem}
+    [矩阵版本] 设 $V = \R^m, W = \R^n$, 各自配备标准内积，并且将$T$等同于矩阵$A \in M_{n \times m}(\R)$. 对于定理5.1.1中的单位正交基，以列向量定义正交矩阵:
+    \[
+        P := (v_1|...|v_m) \in M_{m \times m}(\R), \; Q := (w_1|...|w_n) \in M_{n \times n} (\R),\]
+    再用奇异值定义
+    \[
+        \Sigma := \text{diag}\{\sigma_1, \sigma_2, ... \sigma_r, 0, 0...\} \in M_{n\times m}(\R)\]
+        其中 $r = \text{rank}(T)$.
+    则奇异值分解化为矩阵等式
+    \[
+        AP = Q\Sigma\]
+    亦即 
+    \[
+        A = Q \Sigma P^T \]
+\end{theorem}
+
+
+\section{Kronecker Product}
+\begin{definition}
+    设 $A \in M_{n \x m }(\R), B \in M_{p \x q}(\R)$, 则定义
+    \[
+        A \otimes B = 
+        \begin{pmatrix}
+            a_{11}B & a_{12}B & ... & a_{1n}B \\
+            a_{21}B & a_{22}B & ... & a_{2n}B \\
+            ... \\
+            a_{m1}B & a_{m2}B & ... & a_{mn}B 
+        \end{pmatrix}\]
+\end{definition}
 \end{CJK}
 \end{document}

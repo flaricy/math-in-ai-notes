@@ -18,4 +18,8 @@
 \contentsline {section}{\numberline {3.2}Hamiltonian Graph}{14}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Matrix Theory for Graphs}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Adjacency Matrix}{19}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Matrix Foundations}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}线性映射的伴随}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Singular Value Decomposition}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Kronecker Product}{22}{section.5.3}%
 \contentsfinish 
