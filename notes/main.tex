@@ -723,6 +723,93 @@ Now an \textit{Oriented Graph} is a graph together with a particular orientation
     to be written.
 \end{proof}
 
+\section{The Laplacian of a Graph}
+\begin{definition}
+    [The Laplacian Matrix 无向图的拉普拉斯矩阵] Let $\sigma$ be an arbitrary orientation of a graph $X$, and let D be the incidence matrix of $X^\sigma$. Then the \textit{Laplacian} of $X$ is the matrix $Q(X) = DD^T$.
+\end{definition}
+\begin{remark}
+    From Theorem 4.3.2 we know that Q does not depend on the orientation $\sigma$, and hence it is well defined.
+\end{remark}
+
+\begin{lemma}
+    Let $X$ be a graph with $n$ vertices and $c$ connected components. Then rk $Q = n - c$.
+\end{lemma}
+\begin{proof}
+    Reduced to show that for any matrix $D$, we have 
+    \[
+        rk \ D = rk \ DD^T\] 
+    In fact, let $z \in \R^n  $ such that $DD^Tz = 0$, then $z^TDD^Tz = 0$, which implies $ D^Tz=0$. Thus any vector in the null space of $DD^T$ is in the null space of $D^T$.
+\end{proof}
+下面探讨拉普拉斯矩阵的特征值。 \\
+Since Q is symmetric, its eigenvalues are real. $\R^n$ has an orthogonal basis consisting of eigenvectors of Q. Since $Q = DD^T$, it is positive semi-definite, and therefore its eigenvalues are all nonnegative. \\
+By Lemma 4.4.1, the multiplicity of 0 as eigenvalue of Q is equal to the number of components of X.
+
+
+\begin{lemma}
+    [拉普拉斯二次型] Let $X$ be a graph on $n$ vertices with Laplacian $Q$. Then for any vector x,
+    \[
+        x^TQx = \sum_{uv \in E(X)}(x_u - x_v)^2\]
+\end{lemma}
+\begin{proof}
+    This follows from the obeservation that 
+    \[
+        x^TQx = x^TDD^Tx = |D^Tx|^2\]
+    If $uv \in E(X)$, then the entry of $D^Tx$ corresponding to $uv$ is $\pm(x_u - x_v)$.    
+\end{proof}
+
+\subsection{Trees}
+这一节介绍矩阵树定理。一个图的生成树的个数可以被拉普拉斯矩阵决定。
+首先是一个准备工作。
+\begin{definition}
+    [delete an edge] Let X be a graph, and let $e = uv$ be an edge of X. The graph $X - e$ with vertex set $V(X)$ and edge set $E(X)\\e$ is said to be obtained by \textbf{deleting} the edge $e$.
+\end{definition}
+\begin{definition}
+    [contract an edge] The graph $X/e$ constructed by identifying the vertices $u$ and $v$ and the deleting $e$ is said to be obtained by \textbf{contracting} $e$.
+\end{definition}
+
+\begin{definition}
+    If $M$ is a symmetric matrix with rows and columns indexed by the set $V$ and if $S \subseteq V$, then let $M[S]$ denote the submatrix obtained by deleting rows and columns indexed by elements of $S$.  
+\end{definition}
+
+\begin{theorem}
+    [Matrix Tree Theorem] Let X be a graph with Laplacian matrix Q. If $u$ is an arbitrary vertex of X, then $\det Q[\{u\}]$ is equal to the number of spanning trees of X.
+\end{theorem}
+\begin{proof}
+    Induction on the number of edges of X. \\
+    First, Let $\tau(X)$ be the number of spanning trees of X. we observe that 
+    \[
+        \tau (X) = \tau (X - e) + \tau (X/e)\]
+    more ...
+\end{proof}
+
+\begin{corollary}
+    The number of spanning trees of $K_n$ is $n^{n-2}$.
+\end{corollary}
+\begin{proof}
+    This follows directly from the fact that $Q[u] = nI_{n-1} - J$ for any vertex u.    
+\end{proof}
+
+下面两个定理的证明都需要一些矩阵的技巧。
+矩阵树定理表明，对角元的余子式(cofactor)都相同，事实上拉普拉斯矩阵的伴随(adjoint)中所有元素都相同。
+\begin{theorem}
+    Let $\tau (X)$ denote the number of spanning trees in the graph X and let Q be its Laplacian. Then adj(Q) = $\tau (X) \cdot J$.
+\end{theorem}
+
+\begin{theorem}
+    Let X be a graph on $n$ vertices, and let $\lambda_1\leq...\leq\lambda_n$ be the $n$ eigenvalues of Laplacian of X. Then the number of spanning trees in X is
+     $\frac 1 n {\prod_{i = 2}^{n}\lambda_i}$.
+\end{theorem}
+\begin{proof}
+    The result clearly holds if X is not connected, so we may assume without loss that X is connected. \\
+    Let $\phi(t)$ denote the characteristic polynomial $\det (tI - Q)$. Since $\lambda_1 = 0$, the coefficient of $t$ is 
+    \[
+        (-1)^{n-1}\prod_{i=2}^{n}\]
+    On the other hand, the coefficient of the linear term in $\phi(t)$ is 
+    \[
+        (-1)^{n-1}\sum_{u \in V(X)} \det Q[u]\]
+    This yields the theorem.    
+\end{proof}
+
 \chapterimage{head1.png}
 \chapter{Matrix Foundations}
 

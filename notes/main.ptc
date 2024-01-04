@@ -27,10 +27,12 @@
 \contentsline {section}{\numberline {4.1}Then Adjacency Matrix}{21}{section.4.1}%
 \contentsline {section}{\numberline {4.2}The Incidence Matrix}{22}{section.4.2}%
 \contentsline {section}{\numberline {4.3}The Incidence Matrix of an Oriented Graph}{23}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Matrix Foundations}{25}{chapter.5}%
+\contentsline {section}{\numberline {4.4}The Laplacian of a Graph}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Trees}{24}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}Matrix Foundations}{27}{chapter.5}%
 \ttl@stoptoc {default@4}
 \ttl@starttoc {default@5}
-\contentsline {section}{\numberline {5.1}线性映射的伴随}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Singular Value Decomposition}{25}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Kronecker Product}{26}{section.5.3}%
+\contentsline {section}{\numberline {5.1}线性映射的伴随}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Singular Value Decomposition}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Kronecker Product}{28}{section.5.3}%
 \contentsfinish 
