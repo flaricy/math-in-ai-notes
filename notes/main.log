@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.7)  1 JAN 2024 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.7)  4 JAN 2024 01:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,23 +1029,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 301.
+(hyperref)                setting the option has no effect on input line 320.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 301.
+(hyperref)                setting the option has no effect on input line 320.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 301.
+(hyperref)                setting the option has no effect on input line 320.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 301.
-Package hyperref Info: Option `breaklinks' set `true' on input line 301.
+Package hyperref Info: Option `colorlinks' set `false' on input line 320.
+Package hyperref Info: Option `breaklinks' set `true' on input line 320.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 301.
+(hyperref)                setting the option has no effect on input line 320.
 
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 301.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 320.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1250,7 +1250,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <35> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 48.
-<Pictures//esahubble.png, id=91, 614.295pt x 794.97pt>
+<Pictures//esahubble.png, id=99, 614.295pt x 794.97pt>
 File: Pictures//esahubble.png Graphic file (type png)
 <use Pictures//esahubble.png>
 Package pdftex.def Info: Pictures//esahubble.png  used on input line 58.
@@ -1273,7 +1273,7 @@ File: c70gkai.fd 2021/10/16 4.8.5
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gkai.fdx
 File: c70gkai.fdx 2021/10/16 4.8.5
 ) [2]
-<Pictures//head1.png, id=115, 1027.6794pt x 514.0806pt>
+<Pictures//head1.png, id=123, 1027.6794pt x 514.0806pt>
 File: Pictures//head1.png Graphic file (type png)
 <use Pictures//head1.png>
 Package pdftex.def Info: Pictures//head1.png  used on input line 80.

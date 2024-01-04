@@ -59,7 +59,7 @@
 ~\vfill
 \thispagestyle{empty}
 
-%\noindent Copyright \copyright\ 2014 Andrea Hidalgo\\ % Copyright notice
+%\noindent Copyright \copyright 2014 Andrea Hidalgo\\ % Copyright notice
 
 \noindent \textsc{Personal use}\\
 
@@ -319,16 +319,16 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
 \end{definition}
 
 \begin{definition}
-    [简单通路]
+    [walk 简单通路]
     若$\Gamma$中所有边各异。
 \end{definition}
 \begin{definition}
-    [简单回路]
+    [closed walk 简单回路]
     若$\Gamma$是简单通路且 $v_{i_0} = v_{i_l}$
 \end{definition}
 
 \begin{definition}
-    [初级通路，路径]
+    [path 初级通路，路径]
     如果$\Gamma$的所有顶点各异,所有边各异。
 \end{definition}
 
@@ -581,12 +581,147 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
 \begin{theorem}
     $K_{2n}$中有n-1条边不重的哈密顿回路,$K_{2n+1}$中有n条边不重的哈密顿回路。
 \end{theorem}
+
+% chapter: matrix theory for graphs
 \chapterimage{head2.png} % Chapter heading image
 \chapter{Matrix Theory for Graphs}
-\section{Adjacency Matrix}
+\textbf{以下提到的graph指的是无向图，简单起见可以认为没有自环。允许有重边。}
+\section{Then Adjacency Matrix}
+\begin{definition}
+    [adjacency matrix of a directed graph 邻接矩阵] The adjacency matrix $A(X)$ of a directed graph $X$ is the interger matrix with rows and columns indexed by the vertices of $X$, such that the $uv$-entry of $A(X)$
+    is equal to the number of arcs from u to v. If $X$ is simple, then the elements are 0 or 1.
+\end{definition}
 
+\begin{definition}
+    [adjacency matrix of an undirected graph] We view each edge as a pair of arcs in opposite directions, and $A(X)$ is a symmetric 01-matrix. If the graph has no loops (自环), the diagonal entries of $A(X)$ are 0.
+\end{definition}
+
+\begin{remark}
+    注意是这里的矩阵应该是标定的(顶点指定编号)。同一个顶点集如果采用不同的方式，那么得到的邻接矩阵不同。但是，这些矩阵之间存在关联。具体而言：
+\end{remark}
+
+\begin{lemma}
+    Let X and Y be directed graphs on the same vertex set. Then they are isomorphic if and only if there is a permutation matrix P such that $P^TA(X)P = A(Y)$.
+\end{lemma}
+\begin{proof}
+    将邻接矩阵视为双线性函数的度量矩阵。在不同的基下双线性函数的度量矩阵是合同的。在此处基的变换矩阵是permutation matrix.
+\end{proof}
+\begin{remark}
+    Since permutation matrices are orthogonal, i.e. $P^T = P^{-1}$, and so if X and Y are isomorphic, then $A(X)$ and $A(Y)$ are similar matrices.
+\end{remark}
+\begin{definition}
+    [the spectrum of a matrix 矩阵的谱] The \textit{spectrum} of a matrix is the list of its eigenvalues together with their multiplicities.
+\end{definition}
+\begin{definition}
+    [the spectrum of a graph] The spectrum of a graph $X$ is the spectrum of $A(X)$. 我们也称$A(X)$的特征值和特征向量是图$X$的特征值和特征向量.
+\end{definition}
+\begin{remark}
+    Lemma 4.1.1 shows that the spectrum (or equivalently, the characteristic polynomial of $A(X)$) is an invariant of the isomorphism class of a graph. \\
+    但是两个不同构的图也可以有相同的特征多项式，
+\end{remark}
+下面探讨邻接矩阵提供的更多信息。
+
+\begin{definition}
+    [walk 简单通路] A walk of length $r$ in a directed graph $X$ is a sequence of vertices
+    \[
+        v_0 \sim v_1 \sim ... \sim v_r\]
+    A walk is \textit{closed} if $v_0 = v_r$.
+\end{definition}
+\begin{remark}
+    注意与path区分。path不允许顶点重复。
+\end{remark}
+
+\begin{lemma}
+    Let $X$ be a directed graph with adjacency matrix $A$. The number of walks from $u$ to $v$ in $X$ with length $r$ is $(A^r)_{uv}$.
+\end{lemma}
+\begin{proof}
+    Induction by n. Consider the meaning of matrix multiplication.
+\end{proof}
+\begin{remark}
+    Lemma 4.1.2 shows that the number of closed walks of length $r$ in X is $tr(A^r)$.
+\end{remark}
+
+\begin{corollary}
+    Let $X$ be a graph (无自环的无向图) with $e$ edges and $t$ triangles. A : adjacency matrix, then \\
+    (1) tr $A$ = 0 \\
+    (2) tr $A^2$ = $2e$ \\
+    (3) tr $A^r$ = $6t$ 
+\end{corollary}
+
+\section{The Incidence Matrix}
+\begin{definition}
+    [incidence matrix of an undirected graph 无向图的关联矩阵] Let $G = <V, E>$, $V = \{v_1, ... ,v_n\}$, $E = \{e_1, ...,e_m\}$.
+    The incidence matrix $B(X) \in M_{n\times m}(\mathbb{Z})$, such that
+    \[
+        b_{ij} = \begin{cases}
+            1, \quad if \ v_i \in e_j \\
+            0, \quad otherwise
+        \end{cases}\]
+\end{definition}
+
+\begin{theorem}
+    Let X be a graph with $n$ vertices and $c_0$ bipartite connected components 连通的二部图分量. Then rk $B = n - c_0$.
+\end{theorem}
+\begin{proof}
+    We shall show that the null space of $B$ has dimension $c_0$.    
+\end{proof}
+
+\begin{lemma}
+    Let $B$ be the incidence matrix of the graph X. Then $BB^T = \Delta(X) + A(X)$, where 
+    \[
+        \Delta(X) = diag\{deg(v_1), ... , deg(v_n)\}\]   
+\end{lemma}
+\begin{proof}
+        比较平凡。    
+\end{proof}
+
+% 这是一个外国参考文献中没有的概念
+\begin{definition}
+    [fundamental incidence matrix 基本关联矩阵] 设$v_i$为参考点，在$B(X)$中删去第$i$行得到的矩阵。
+\end{definition}
+
+% to be written: 关于rank和连通性的定理
+
+\section{The Incidence Matrix of an Oriented Graph} 
+可以理解为有向图。 \\
+An \textit{orientation} of a (无向图)graph $X$ is the assignment of a direction to each edge.\\
+Recall that an \textbf{arc} of a graph is an ordered pair of adjacent vertices $(u, v)$. To put the definition of orientation formally,
+\begin{definition}
+    [orientation of a graph] a function $\sigma : E \to \{-1, 1\}$, where $E$ is the arcs of X. The function satisfies that if $(u, v)$ is an arc, then 
+    \[
+        \sigma (u,v) = -\sigma(v, u).\]
+    If $\sigma (u,v) = 1$, then we will regard the edge $uv$ as $u \to v$.
+\end{definition}
+
+Now an \textit{Oriented Graph} is a graph together with a particular orientation. We may use $X^\sigma$ to denote it.
+\begin{definition}
+    [incidence matrix of a directed graph] $D(X^\sigma)$ is the $\{0, 1, -1\}$-matrix with rows indexed by vertices, columns indexed by edges of X. 
+    \[
+        d_{uf} = \begin{cases}
+            -1, \quad &u \to \_ \\
+            1, \quad  &\_ \to u \\
+            0, \quad & else 
+        \end{cases}\]
+\end{definition}
+\begin{remark}
+    注意这个和离散数学书上的定义是反的。
+\end{remark}
+
+\begin{theorem}
+    If $X$ has $c$ connected components. Let $\sigma$ be any orientation of $X$ and $D$ is the incidence matrix of $X^\sigma$, then rk $D = n - c$. 
+\end{theorem}
+\begin{proof}
+    Show that the null space of D has dimension $c$. Suppose $z \in \R^n$ such that $z^TD = 0$. 根据定义验证每一个连通分支中的$z_i$应该取相同值。
+\end{proof}
 % new chapter : matrix
 \def\x{\times}
+
+\begin{theorem}
+    $DD^T = \Delta(X) - A(X)$.
+\end{theorem}
+\begin{proof}
+    to be written.
+\end{proof}
 
 \chapterimage{head1.png}
 \chapter{Matrix Foundations}
@@ -644,5 +779,13 @@ f \circ A (x) & = f(A(\alpha x + (1-\alpha) y)) \\
             a_{m1}B & a_{m2}B & ... & a_{mn}B 
         \end{pmatrix}\]
 \end{definition}
+\begin{property}
+    [混合乘积] \[
+        (A\otimes B)(C \otimes D) = (AC) \otimes (BD)\]
+\end{property}
+\begin{proof}
+    利用分块矩阵乘法即可验证。
+\end{proof}
+
 \end{CJK}
 \end{document}
