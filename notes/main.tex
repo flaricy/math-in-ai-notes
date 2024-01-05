@@ -803,7 +803,7 @@ By Lemma 4.4.1, the multiplicity of 0 as eigenvalue of Q is equal to the number 
     The result clearly holds if X is not connected, so we may assume without loss that X is connected. \\
     Let $\phi(t)$ denote the characteristic polynomial $\det (tI - Q)$. Since $\lambda_1 = 0$, the coefficient of $t$ is 
     \[
-        (-1)^{n-1}\prod_{i=2}^{n}\]
+        (-1)^{n-1}\prod_{i=2}^{n}\lambda_i\]
     On the other hand, the coefficient of the linear term in $\phi(t)$ is 
     \[
         (-1)^{n-1}\sum_{u \in V(X)} \det Q[u]\]
@@ -866,12 +866,133 @@ By Lemma 4.4.1, the multiplicity of 0 as eigenvalue of Q is equal to the number 
             a_{m1}B & a_{m2}B & ... & a_{mn}B 
         \end{pmatrix}\]
 \end{definition}
+\begin{remark}
+    \begin{itemize}
+        \item 如果 $A = a\in \R$, 那么 $A \otimes B = aB$ 
+        \item 如果 $B = b \in \R$, 那么 $A \otimes B = bA$ 
+    \end{itemize}
+    退化为矩阵空间的纯量乘法。
+\end{remark}
+
 \begin{property}
     [混合乘积] \[
         (A\otimes B)(C \otimes D) = (AC) \otimes (BD)\]
 \end{property}
 \begin{proof}
     利用分块矩阵乘法即可验证。
+\end{proof}
+
+\section{Matrix Norm}
+参考\href{https://en.wikipedia.org/wiki/Matrix_norm}{click here}
+\subsection{Matrix norms induced by vector p-norms}
+\subsection{"Entry-wise" matrix norms 矩阵元范数}
+Frobenius norm
+
+\subsection{Schatten norms}
+proof of the triangular inequality is hard for Schatten norms.
+
+% 矩阵求导
+\section{Matrix Derivative}
+本部分内容可以参考\href{https://en.wikipedia.org/wiki/Matrix_calculus#References}{click here}
+
+\begin{definition}
+    [标量函数对矩阵求导] Let $y: M_{m\times n}(\R) \to \R$. Then \[
+        \frac {\partial y} {\partial X} = \left(\frac{\partial y}{\partial x_{ij}}\right)_{ij} \in M_{m\times n}(\R)
+         \]
+\end{definition}
+\begin{remark}
+    这里和传统的梯度定义的行列顺序是反的。
+\end{remark}
+
+\begin{definition}
+    [因变量是矩阵，自变量是标量] Let $y:  \R \to M_{m\times n}(\R) $, Then 
+    \[
+        \frac {\partial Y} {\partial x} = \left(\frac{\partial Y_{ij}}{\partial x}\right)_{ij} \in M_{m\times n}(\R)
+        \]
+\end{definition}
+
+\begin{example}
+    求 $y(X) = ||X||_F^2$的导数。
+\end{example}
+\begin{example}
+    求 $y(X) = tr (X)$ 的导数。
+\end{example}
+
+下面定义矩阵对矩阵的导数，这个定义并不是统一的。
+\begin{definition}
+    设 $X,Y$ 为矩阵，定义
+     \[
+        \frac{\partial Y}{\partial X} = (\frac{\partial }{\partial x_{ij}}) \otimes Y
+        \]
+\end{definition}
+\begin{remark}
+    如果 X，Y之一为标量，根据5.3.1的remark，这个定义等同于5.4.1和5.4.2.
+\end{remark}
+
+\begin{property}
+    如果自变量为标量$t$. \\
+    \begin{itemize}
+        \item $\frac{\partial (X + Y)}{\partial t} = \frac{\partial X}{\partial t} + \frac{\partial Y}{\partial t}$
+        \item $\frac{\partial X\otimes Y}{\partial t} =\frac{\partial X}{\partial t} \otimes Y + \frac{\partial Y}{\partial t} \otimes X$
+        \item $\frac{\partial XY}{\partial t} =\frac{\partial X}{\partial t} Y + \frac{\partial Y}{\partial t} X$
+    \end{itemize}
+\end{property}
+\begin{proof}
+    后两条归结为标量函数乘积的导数。
+\end{proof}
+
+\begin{property}
+    如果自变量为向量$x$。
+    \begin{itemize}
+        \item $\frac{\partial (a^T x)}{\partial x} = a$
+        \item $\frac{\partial (x^TAx)}{\partial x} = (A + A^T)x$
+        \item $\frac{\partial (Ax)^T}{\partial x} = A^T$
+    \end{itemize}
+\end{property}
+\begin{proof}
+    第二条：Let $y = x^TAx = \sum_{i,j}a_{ij}x_ix_j$, then $\frac{\partial y}{\partial x_i} = 2a_{ii}x_i + \sum_{j \neq i} a_{ij}x_j + \sum_{j \neq i}a_{ji}x_j$.     \\
+    第三条：考虑结果的第$i$行$\frac{\partial (Ax)^T}{\partial x_i}$，设$A = (a_1 | a_2 | ... | a_n)$, 则 $Ax = (x_1a_1 + ... + x_na_n)$. 所以 $\frac{\partial (Ax)^T}{\partial x_i} = a_i^T$
+\end{proof}
+\begin{corollary}
+    $\frac{\partial (x^TA)}{\partial x} = A$. $x$可以退化成标量。
+\end{corollary}
+\begin{property}
+    自变量为矩阵$X$. 
+    \begin{itemize}
+        \item $\frac{\partial \text{tr} (AX)}{\partial X} = A^T$
+    \end{itemize}
+\end{property}
+\begin{proof}
+    Asume $A \in M_{M\times n}(\R)$
+    Let $y = tr(AX) = \sum_{i = 1}^{m}\sum_{j = 1}^{n} a_{ij}x_{ji}$, which easily implies the above identity.
+\end{proof}
+
+\subsection{chain rule}
+to be written
+
+\begin{example}
+    计算 $y = ||BX - C||_F^2$关于$X$的导数。
+\end{example}
+\begin{proof}
+    Note that 
+    \[
+        y = tr\left((BX - C)(BX-C)^T\right) = tr\left((BX-C)(X^TB^T-C^T)\right) = tr\left(BXX^TB^T\right) - tr\left(BXC^T\right) - tr\left(CX^TB^T\right) + tr\left(CC^T\right)\]   
+    First, we have $tr\left(BXC^T\right) = tr\left(CX^TB^T\right) = tr\left(C^TBX\right)$, and 
+    \[
+        \frac{\partial (C^TBX)}{\partial X} = B^TC\]
+    Consider that 
+    \[
+        tr\left(B^TB(X + \varepsilon Y)(X + \varepsilon Y)^T\right) = tr\left(B^TB(XX^T)\right) + \varepsilon \ tr\left(B^TBXY^T\right) + \varepsilon \ tr\left(B^TBYX^T\right) + O(\varepsilon)
+        \]
+    Thus, 
+    \[
+        \lim_{\varepsilon \to 0} \frac {\Delta tr(B^TBXX^T)}{\varepsilon} = tr(YX^TB^TB) + tr(X^TB^TBY) = tr\left((X^TB^TB+X^TB^TB)Y\right)\]
+    Then,
+    \[
+        \frac{\partial tr\left(BXX^TB^T\right)}{\partial X} = \frac{\partial 2\cdot tr\left(X^TB^TBY\right)}{\partial Y} = 2 \cdot B^TBX \]
+    To sum up, 
+    \[
+        \frac{\partial y}{\partial X} = 2(B^TBX - B^TC)\]
 \end{proof}
 
 \end{CJK}
