@@ -995,5 +995,47 @@ to be written
         \frac{\partial y}{\partial X} = 2(B^TBX - B^TC)\]
 \end{proof}
 
+\chapterimage{head1.png}
+\chapter{随机事件与概率}
+\section{Kolmogorov 公理系统}
+
+\def\F{\mathcal{F}}
+Let $\Omega$ be any non-empty set, called 基本事件空间，$\mathcal{P}(\Omega)$表示$\Omega$的幂集
+\begin{definition}
+    Let $\mathcal{F} \subset \mathcal{P}(\Omega)$. $P = P(\cdot) :\mathcal{F} \to R$, 如果满足 \\
+    (1) $\Omega \in \mathcal{F}$ \\
+    (2) $A \in \mathcal{F} \implies A^c = \Omega - A \in \mathcal{F}$ \\
+    (3) $A_n \in \mathcal{F}(n = 1, 2..,.)$, then $\cup_{i = 1}^{\infty} A_i \in \mathcal{F} $ \\
+    (4) $\forall A, P(A) \geq 0$ \\
+    (5) $P(\Omega) = 1$ \\
+    (6) If $A_i (i = 1, 2, ...)$ are disjoint, $P(\sum_{i = 1}^{\infty}A_i) = \sum_{i = 1}^{\infty}P(A_i)$ \\
+    资料$(\Omega, \F, P)$称为概率空间。$P$是$\F$上概率测度。对一个事件(集合)$A$而言，$P(A)$为$A$的概率。
+\end{definition}
+
+\begin{definition}
+    [$\sigma - algebra$]  Let $\mathcal{F} \subset \mathcal{P}(\Omega)$, 如果满足 \\
+    (1) $\Omega \in \mathcal{F}$ \\
+    (2) $A \in \mathcal{F} \implies A^c = \Omega - A \in \mathcal{F}$ \\
+    (3) $A_n \in \mathcal{F}(n = 1, 2..,.)$, then $\cup_{i = 1}^{\infty} A_i \in \mathcal{F} $ \\
+    则称$\F$为$\Omega$中的$\sigma$域或者$\sigma$代数。
+\end{definition}
+\begin{property}
+    Let $\F$ be a $\sigma$-algebra of $\Omega$, we have \\
+    (1) If $A_i \in \F$, then $\cup_{i = 1}^n A_i \in \F$. $\cap_{i = 1}^n A_i \in \F$ \\
+    (2) If $A_i \in \F$, then $\cap_{i = 1}^{\infty} \in \F$\\
+    (3) If $A, B \in \F$, then $A - B \in \F$ 
+\end{property}
+\begin{proof}
+    归结为集合运算的性质。比如 $\left(\cap_{i = 1}^{\infty}A_i\right)^c = \cup_{i=1}^\infty A_i^c $
+\end{proof}
+
+% \begin{proposition}
+%     $P$ has the following properties \newline
+%     (1) $P(\emptyset) = 0$ \newline
+%     (2) If $A \in \F$, then $P(A^c) = 1 - P(A)$ 
+%     third one
+% \end{proposition}
+
+
 \end{CJK}
 \end{document}
