@@ -1,48 +1,37 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Convex Sets}{7}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Basic Concepts of Graphs}{7}{chapter.1}%
 \ttl@starttoc {default@1}
-\contentsline {section}{\numberline {1.1}Convexity}{7}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Cone}{7}{subsection.1.1.1}%
-\contentsline {subsubsection}{Operations preserving convexity}{7}{section*.2}%
-\contentsline {subsubsection}{Operations that induce convexity}{7}{section*.3}%
-\contentsline {section}{\numberline {1.2}Convex Functions}{7}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Epigraph}{8}{subsection.1.2.1}%
-\contentsline {section}{\numberline {1.3}Support Function}{10}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Operations Preserve Convexity of Functions}{11}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Basic Concepts}{13}{chapter.2}%
+\contentsline {section}{\numberline {1.1}Simple graph, complete graph, tournament graph}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Operations on a graph}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Havel-Hakimi algorithm \& Erdos-Gallai theorem}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}通路与回路}{7}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Eulerian Graph and Hamiltonian Graph}{9}{chapter.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
-\contentsline {section}{\numberline {2.1}Simple graph, complete graph, tournament graph}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Operations on a graph}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Havel-Hakimi algorithm \& Erdos-Gallai theorem}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}通路与回路}{13}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Eulerian Graph and Hamiltonian Graph}{15}{chapter.3}%
+\contentsline {section}{\numberline {2.1}Eulerian Graph}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Hamiltonian Graph}{10}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Matrix Theory for Graphs}{15}{chapter.3}%
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
-\contentsline {section}{\numberline {3.1}Eulerian Graph}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hamiltonian Graph}{16}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Matrix Theory for Graphs}{21}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Then Adjacency Matrix}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Incidence Matrix}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The Incidence Matrix of an Oriented Graph}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}The Laplacian of a Graph}{18}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Trees}{18}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Matrix Foundations}{21}{chapter.4}%
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
-\contentsline {section}{\numberline {4.1}Then Adjacency Matrix}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}The Incidence Matrix}{22}{section.4.2}%
-\contentsline {section}{\numberline {4.3}The Incidence Matrix of an Oriented Graph}{23}{section.4.3}%
-\contentsline {section}{\numberline {4.4}The Laplacian of a Graph}{24}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Trees}{24}{subsection.4.4.1}%
-\contentsline {chapter}{\numberline {5}Matrix Foundations}{27}{chapter.5}%
+\contentsline {section}{\numberline {4.1}线性映射的伴随}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Singular Value Decomposition}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Kronecker Product}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Matrix Norm}{22}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Matrix norms induced by vector p-norms}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}"Entry-wise" matrix norms 矩阵元范数}{22}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Schatten norms}{22}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Matrix Derivative}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}chain rule}{24}{subsection.4.5.1}%
+\contentsline {chapter}{\numberline {5}随机事件与概率}{25}{chapter.5}%
 \ttl@stoptoc {default@4}
 \ttl@starttoc {default@5}
-\contentsline {section}{\numberline {5.1}线性映射的伴随}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Singular Value Decomposition}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Kronecker Product}{28}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Matrix Norm}{28}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Matrix norms induced by vector p-norms}{28}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}"Entry-wise" matrix norms 矩阵元范数}{28}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Schatten norms}{28}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Matrix Derivative}{29}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}chain rule}{30}{subsection.5.5.1}%
-\contentsline {chapter}{\numberline {6}随机事件与概率}{31}{chapter.6}%
-\ttl@stoptoc {default@5}
-\ttl@starttoc {default@6}
-\contentsline {section}{\numberline {6.1}Kolmogorov 公理系统}{31}{section.6.1}%
+\contentsline {section}{\numberline {5.1}Kolmogorov 公理系统}{25}{section.5.1}%
 \contentsfinish 
